@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Kotlindemo</string>
+    <string name="login">login</string>
+</resources>
