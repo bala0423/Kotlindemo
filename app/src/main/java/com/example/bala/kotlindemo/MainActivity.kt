@@ -1,5 +1,6 @@
 package com.example.bala.kotlindemo
 
+import android.content.Intent
 import android.nfc.Tag
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -17,6 +18,17 @@ class MainActivity : AppCompatActivity() {
             Log.i("MainActivity","button is clicked")
             Toast.makeText(this,"Button was clicked",Toast.LENGTH_SHORT).show()
         }
+        nxtbutton.setOnClickListener {
+
+            val message : String = ettext.text.toString()
+            Toast.makeText(this,message,Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this,Secondactivity::class.java)
+            startActivity(intent)
+
+
+        }
+
 
     }
 }
